@@ -40,7 +40,7 @@ classes = ('noface', 'face')
 n_epochs = 8  # Might work with 6 as well?
 
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+optimizer = optim.Adam(net.parameters(), lr=0.001)
 
 for epoch in range(1, n_epochs+1):
     running_loss = 0.0
