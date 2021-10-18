@@ -37,7 +37,7 @@ test_loader = torch.utils.data.DataLoader(
     test_data, batch_size=batch_size, shuffle=True, num_workers=1)
 classes = ('noface', 'face')
 
-n_epochs = 8  # Had 6
+n_epochs = 8  # Might work with 6 as well?
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)

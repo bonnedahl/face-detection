@@ -2,3 +2,6 @@
 test_images/
 train_images/
 *.zip
+pretrained.py
+pretrained2.py
+pretrained3.py
